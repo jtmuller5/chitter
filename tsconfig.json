@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "rootDir": "api",
-    "outDir": "dist",
+    "rootDir": "src",
+    "outDir": "api",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,6 +17,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "strictNullChecks": true,
-    "noEmit": false
+    "noEmit": false,
   }
 }

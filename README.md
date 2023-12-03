@@ -7,5 +7,9 @@ Demo app for interfacing with custom GPTs
 - `npm i express`
 - `npm i --save-dev @types/express`
 - `npm run dev`
+- `vercel`
+
+# Resources
+- https://vercel.com/guides/using-express-with-vercel
 
 ![Alt text](image.png)
