@@ -1,4 +1,6 @@
 import messageRoutes from "./routes/messageRoutes";
+import { Request, Response } from "express";
+
 
 var createError = require("http-errors");
 var express = require("express");
@@ -9,6 +11,12 @@ var logger = require("morgan");
 var indexRouter = require("./routes/index");
 
 var app = express();
+
+app.use(function(req: Request, res: Response, next: any) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

@@ -2,11 +2,11 @@
   "name": "chitter",
   "version": "0.0.0",
   "private": true,
-  "main": "dist/app.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "start": "npx tsc && node ./dist/app.js",
-    "dev": "nodemon ./src/app.ts"
+    "start": "npx tsc && node ./dist/index.js",
+    "dev": "nodemon ./api/index.ts"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",

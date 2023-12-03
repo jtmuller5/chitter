@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const messageController_1 = __importDefault(require("./../controllers/messageController"));
+const messageController_1 = __importDefault(require("../controllers/messageController"));
 const router = express_1.default.Router();
-router.post("/messages", messageController_1.default.createMessage);
-router.get("/messages", messageController_1.default.getMessages);
+router.post("/", messageController_1.default.createMessage);
+router.get("/", messageController_1.default.getMessages);
 exports.default = router;

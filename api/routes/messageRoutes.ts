@@ -1,7 +1,7 @@
 // messageRoutes.ts
 
 import express from "express";
-import messageController from "./../controllers/messageController";
+import messageController from "../controllers/messageController";
 
 const router = express.Router();
 

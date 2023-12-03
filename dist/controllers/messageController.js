@@ -6,6 +6,7 @@ exports.getMessages = exports.createMessage = void 0;
 let messages = [];
 const createMessage = (req, res) => {
     const { message } = req.body;
+    console.log("New message: ", message);
     if (!message) {
         res.status(400).send("No message provided");
         return;
@@ -15,6 +16,7 @@ const createMessage = (req, res) => {
 };
 exports.createMessage = createMessage;
 const getMessages = (_req, res) => {
+    console.log("Messages: ", messages);
     res.status(200).json(messages);
 };
 exports.getMessages = getMessages;
