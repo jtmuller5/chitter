@@ -17,7 +17,7 @@ export const createMessage = (req: Request, res: Response): void => {
 };
 
 export const getMessages = (_req: Request, res: Response): void => {
-    console.log("Messages: ", messages);
+  console.log("Messages: ", messages);
   res.status(200).json(messages);
 };
 
@@ -27,4 +27,3 @@ const messageController = {
 };
 
 export default messageController;
-    
